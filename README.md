@@ -1,6 +1,6 @@
-<h1><a href="https://www.npmjs.com/package/@creatrip/env-safe">env-safe</a></h1>
-
 <img src="https://avatars.githubusercontent.com/u/21240036?s=200&v=4" alt="env-safe" align="right" width="110" />
+
+<h1><a href="https://www.npmjs.com/package/@creatrip/env-safe">env-safe</a></h1>
 
 <!-- Badges -->
 
@@ -100,6 +100,18 @@ export class Env {
 }
 ```
 
+### Nullable
+
+Set nullable to env config class property:
+
+```typescript
+@EnvSafe()
+export class Env {
+  @EnvKey({ nullable: true })
+  static DATABASE_HOST: string | null; // String or null
+}
+```
+
 ### Type-Safe
 
 Since the provided `.env` does not contain all the variables defined in env config class, an exception is thrown:
@@ -126,7 +138,9 @@ export class Env {
 ```sh
 $ node dist/index.js
 
-ERROR: DATABASE_USER is not defined in .env
+ERROR: .env - DATABASE_HOST is not defined
+ERROR: .env - DATABASE_PORT is not allowed
+ERROR: .env - DATABASE_USER is not defined
 ```
 
 ### Change `.env` path
@@ -167,6 +181,12 @@ export class EnvS3 {
   static S3_BUCKET: string; // String("bucket name")
 }
 ```
+
+### Auto generate template .env
+
+If you don't make .env, automatically generate .env with template:
+
+https://user-images.githubusercontent.com/25793226/205256885-1ba27e5d-ec98-4c9a-95be-418a81c28138.mov
 
 ## Contributing Guide
 

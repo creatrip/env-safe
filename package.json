@@ -1,11 +1,11 @@
 {
   "name": "@creatrip/env-safe",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "🔑 Loads environment variables from .env for nodejs projects with safe",
   "main": "index.js",
   "types": "index.d.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p ./tsconfig.build.json",
     "lint": "eslint \"src/**/**.ts\"",
     "start:dev": "nodemon src/index.ts",
     "test": "jest",
