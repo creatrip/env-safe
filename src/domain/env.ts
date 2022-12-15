@@ -11,7 +11,7 @@ export class Env {
     instance.path = path;
     const data: { [name: string]: string } = Dotenv.load(path);
     for (const name in data) {
-      if (data[name] !== '') {
+      if (data[name] !== undefined) {
         instance.data.set(name, data[name]);
       }
     }
