@@ -16,7 +16,7 @@
 ## Install
 
 ```sh
-npm intall @creatrip/env-safe --save
+npm install @creatrip/env-safe --save
 ```
 
 Or installing with yarn? `yarn add @creatrip/env-safe`
