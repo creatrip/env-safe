@@ -1,11 +1,11 @@
-name: CI
+name: Test must be succeed
 
 on:
   pull_request:
     types: [opened, reopened, synchronize]
 
 jobs:
-  coverage:
+  test-must-be-succeed:
     strategy:
       matrix:
         node-version: [16.x]

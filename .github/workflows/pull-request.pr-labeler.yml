@@ -5,7 +5,7 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  pr-labeler:
+  pull-request-pr-labeler:
     if: ${{ github.event.action == 'opened' }}
     runs-on: ubuntu-latest
     steps:
