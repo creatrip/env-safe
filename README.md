@@ -197,4 +197,4 @@ Learn about contribution [here](https://github.com/creatrip/env-safe/blob/latest
 
 ## License
 
-**env-safe** is [MIT Licensed](./LICENSE).
+**env-safe** is [MIT Licensed](https://github.com/creatrip/env-safe/blob/latest/LICENSE).
