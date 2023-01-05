@@ -1,7 +1,3 @@
-<img src="https://avatars.githubusercontent.com/u/21240036?s=200&v=4" alt="env-safe" align="right" width="110" />
-
-<h1><a href="https://www.npmjs.com/package/@creatrip/env-safe">env-safe</a></h1>
-
 <!-- Badges -->
 
 [![CI](https://github.com/creatrip/env-safe/actions/workflows/ci.yml/badge.svg)](https://github.com/creatrip/env-safe/actions/workflows/ci.yml)
@@ -46,7 +42,7 @@ DATABASE_PORT=3306
 Use env-safe to create env config class:
 
 ```typescript
-import { EnvSafe, EnvKey } from '@creatrip/env-safe';
+import { EnvSafe, EnvKey } from "@creatrip/env-safe";
 
 @EnvSafe()
 export class Env {
@@ -63,7 +59,7 @@ export class Env {
 That's it. Just use the newly created config class:
 
 ```typescript
-import { Env } from './env.ts';
+import { Env } from "./env.ts";
 
 mysql.connect({
   host: Env.DATABASE_HOST, // String("localhost")
@@ -92,7 +88,7 @@ Set default value to env config class property:
 ```typescript
 @EnvSafe()
 export class Env {
-  @EnvKey({ default: 'localhost' })
+  @EnvKey({ default: "localhost" })
   static DATABASE_HOST: string;
 
   @EnvKey({ default: 3306 })
