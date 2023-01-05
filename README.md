@@ -187,6 +187,10 @@ If you don't make .env, just run application. .env will automatically generated 
 
 https://user-images.githubusercontent.com/25793226/205256885-1ba27e5d-ec98-4c9a-95be-418a81c28138.mov
 
-## Contributing Guide
+## Samples
 
-See [CONTRIBUTING.md](https://github.com/creatrip/env-safe/blob/main/CONTRIBUTING.md)
+Take a look at the samples in [sample](https://github.com/creatrip/env-safe/tree/latest/SAMPLE) for examples of usage.
+
+## Contributing
+
+Learn about contribution [here](https://github.com/creatrip/env-safe/blob/latest/CONTRIBUTING.md) and how to setup your development environment [here](https://github.com/creatrip/env-safe/blob/latest/DEVELOPER.md).
