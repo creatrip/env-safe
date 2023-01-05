@@ -1,9 +1,8 @@
 name: Publish Package to npmjs
 
 on:
-  push:
-    branches:
-      - latest
+  release:
+    types: [created]
 
 jobs:
   build:
