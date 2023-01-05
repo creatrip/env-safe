@@ -1,0 +1,30 @@
+name: Publish Package to npmjs
+
+on:
+  push:
+    branches:
+      - latest
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "./SOURCE_CODE"
+    steps:
+      - uses: actions/checkout@v3
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm install
+      - run: npm run build
+      - run: cp ./package.json ./dist/package.json
+      - run: cp ./package-lock.json ./dist/package-lock.json
+      - run: cp ../README.md ./dist/README.md
+      - run: cp ../LICENSE ./dist/LICENSE
+      - run: cp ../SECURITY.md ./dist/SECURITY.md
+      - run: cd dist && npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

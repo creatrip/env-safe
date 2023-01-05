@@ -1,4 +1,5 @@
 name: Auto Assign
+
 on:
   pull_request:
     types: [opened, reopened]
