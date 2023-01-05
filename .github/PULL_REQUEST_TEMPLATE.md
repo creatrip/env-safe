@@ -1,8 +1,9 @@
 ## Type of changes
 
-- [ ] source code
-- [ ] document
-- [ ] other
+- [ ] **Break change**
+- [ ] Source code
+- [ ] Document
+- [ ] Other
 
 ## Changes
 
