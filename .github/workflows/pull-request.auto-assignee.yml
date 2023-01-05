@@ -1,4 +1,4 @@
-name: Auto Assign
+name: Update pull request assignee
 
 on:
   pull_request:

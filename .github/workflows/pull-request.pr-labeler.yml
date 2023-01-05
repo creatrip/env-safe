@@ -1,4 +1,4 @@
-name: PR Labeler
+name: Update pull request label
 
 on:
   pull_request:
