@@ -6,7 +6,6 @@ Note: **env-safe** is not 1.0 yet. Be prepared to do major refactoring due to br
 
 <!-- Badges -->
 
-[![CI](https://github.com/creatrip/env-safe/actions/workflows/ci.yml/badge.svg)](https://github.com/creatrip/env-safe/actions/workflows/ci.yml)
 [![NPM version](https://img.shields.io/npm/v/@creatrip/env-safe.svg)](https://www.npmjs.com/package/@creatrip/env-safe)
 <img alt="NPM Download" src="https://img.shields.io/npm/dw/@creatrip/env-safe">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/creatrip/env-safe">
