@@ -42,7 +42,7 @@ DATABASE_HOST="localhost"
 DATABASE_PORT=3306
 ```
 
-Use env-safe to create env config class:
+Use **env-safe** to create env config class:
 
 ```typescript
 import { EnvSafe, EnvKey } from "@creatrip/env-safe";
@@ -194,3 +194,7 @@ Take a look at the samples in [sample](https://github.com/creatrip/env-safe/tree
 ## Contributing
 
 Learn about contribution [here](https://github.com/creatrip/env-safe/blob/latest/CONTRIBUTING.md) and how to setup your development environment [here](https://github.com/creatrip/env-safe/blob/latest/DEVELOPER.md).
+
+## License
+
+**env-safe** is [MIT LICENSED](./LICENSE).
