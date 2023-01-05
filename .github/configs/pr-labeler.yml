@@ -1,4 +1,3 @@
-feature: ['feat/*', 'feature/*']
-bug: ['fix/*', 'bug/*']
-enhancement: ['enhance/*', 'enhancement/*']
-documentation: ['doc/*', 'document/*', 'documentation/*']
+feature: ["feat/*", "feature/*"]
+bug: ["fix/*", "bug/*"]
+documentation: ["doc/*", "document/*", "documentation/*"]
