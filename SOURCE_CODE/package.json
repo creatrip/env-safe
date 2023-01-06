@@ -61,7 +61,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "dotenv": "16.0.2",
+    "dotenv": "16.0.3",
     "reflect-metadata": "0.1.13"
   }
 }
